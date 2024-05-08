@@ -34,6 +34,16 @@ class _MenuDesktopState extends State<MenuDesktop> {
           ),
           iconTheme: IconThemeData(color: colors.onPrimary),
           actions: [
+            IconButton.filledTonal(
+              style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll(colors.primary)
+              ),
+                onPressed: () {
+                  logout();
+                },
+                icon: const Icon(Icons.logout,),
+                tooltip: 'Logout',
+            ),
             Padding(
               padding: const EdgeInsets.fromLTRB(8, 8, 15, 8),
               child: Text(name,style: const TextStyle(color: Colors.white, fontSize: 24)),
@@ -45,19 +55,23 @@ class _MenuDesktopState extends State<MenuDesktop> {
           child: BotonesDrawer(),
         ),
         backgroundColor: Colors.white,
-        body: Center(child: Image.asset('images/TrackItWater.jpeg')),
-        bottomNavigationBar: BottomAppBar(
-          color: Colors.white,
-            elevation: 0,
-            child: IconButton.filledTonal(
-              style: ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(colors.primary)
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: const AssetImage('images/Rain.jpg'),
+              fit: BoxFit.cover, // You can adjust the fit based on your requirement
+              colorFilter: ColorFilter.mode(
+               Colors.black.withOpacity(0.5), // Adjust the opacity here (0.0 to 1.0)
+                BlendMode.dstATop, // Blend mode for transparency
               ),
-                onPressed: () {
-                  logout();
-                },
-                icon: const Icon(Icons.logout))
+            ),
+          ),
+          child: Center(
+            child: Image.asset('images/LogoTransparent.png')
+          )
         ),
+        
+        
       ),
     );
   }
