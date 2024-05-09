@@ -56,16 +56,16 @@ class _MenuDesktopState extends State<MenuDesktop> {
         ),
         backgroundColor: Colors.white,
         body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: const AssetImage('images/Rain.jpg'),
-              fit: BoxFit.cover, // You can adjust the fit based on your requirement
-              colorFilter: ColorFilter.mode(
-               Colors.black.withOpacity(0.5), // Adjust the opacity here (0.0 to 1.0)
-                BlendMode.dstATop, // Blend mode for transparency
-              ),
-            ),
-          ),
+          // decoration: BoxDecoration(
+          //   image: DecorationImage(
+          //     image: const AssetImage('images/Rain.jpg'),
+          //     fit: BoxFit.cover, // You can adjust the fit based on your requirement
+          //     colorFilter: ColorFilter.mode(
+          //      Colors.black.withOpacity(0.5), // Adjust the opacity here (0.0 to 1.0)
+          //       BlendMode.dstATop, // Blend mode for transparency
+          //     ),
+          //   ),
+          // ),
           child: Center(
             child: Image.asset('images/LogoTransparent.png')
           )
