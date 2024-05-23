@@ -28,7 +28,7 @@ class _MenuDesktopState extends State<MenuDesktop> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: colors.primary,
-          title: const Text(
+          title: const Text( 
             'Menú',
             style: TextStyle(color: Colors.white),
           ),
