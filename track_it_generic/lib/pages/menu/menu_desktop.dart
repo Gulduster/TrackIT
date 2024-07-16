@@ -67,7 +67,7 @@ class _MenuDesktopState extends State<MenuDesktop> {
           //   ),
           // ),
           child: Center(
-            child: Image.asset('images/LogoTransparent.png')
+            child: Image.asset('images/LogoTransparentGrey.png')
           )
         ),
         

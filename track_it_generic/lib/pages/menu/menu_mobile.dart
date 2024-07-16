@@ -52,7 +52,7 @@ class _MenuMobileState extends State<MenuMobile> {
         backgroundColor: Colors.white,
         body: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Center(child: Image.asset('images/LogoTransparent.png', )),
+          child: Center(child: Image.asset('images/LogoTransparentGrey.png', )),
         ),
         bottomNavigationBar: BottomAppBar(
           color: Colors.white,
